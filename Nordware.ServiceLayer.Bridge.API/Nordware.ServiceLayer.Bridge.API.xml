@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nordware.ServiceLayer.Bridge.API</name>
+    </assembly>
+    <members>
+        <member name="T:Nordware.ServiceLayer.Bridge.API.Controllers.InvoiceController">
+            <summary>
+            Nota Fiscal de Saída
+            </summary>
+        </member>
+        <member name="M:Nordware.ServiceLayer.Bridge.API.Controllers.InvoiceController.Get(System.Int32)">
+            <summary>
+            Retorna dados NF
+            </summary>
+            <returns>NF</returns>
+        </member>
+        <member name="M:Nordware.ServiceLayer.Bridge.API.Controllers.InvoiceController.Post(Nordware.ServiceLayer.Bridge.API.Models.DocumentModel)">
+            <summary>
+            Insere NF
+            </summary>
+            <returns>DocEntry NF gerada</returns>
+        </member>
+        <member name="T:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel">
+            <summary>
+            Documento de Marketing
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.BPL_IDAssignedToInvoice">
+            <summary>
+            ID Filial (Tabela OBPL)
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.DocDate">
+            <summary>
+            Data de Lançamento
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.DocDueDate">
+            <summary>
+            Data de Vencimento
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.TaxDate">
+            <summary>
+            Data do documento
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.CardCode">
+            <summary>
+            Cód. Cliente
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.CardName">
+            <summary>
+            Nome Cliente
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.Comments">
+            <summary>
+            Observações
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.PaymentGroupCode">
+            <summary>
+            Forma pagamento
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.SalesPersonCode">
+            <summary>
+            Id Vendedor (Tabela OSLP)
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.DiscountPercent">
+            <summary>
+            Porcentagem de Desconto
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.SequenceSerial">
+            <summary>
+            Número da NF
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.SeriesString">
+            <summary>
+            Número de Série
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.SequenceModel">
+            <summary>
+            Sequência
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.OpeningRemarks">
+            <summary>
+            Observações Iniciais
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.ClosingRemarks">
+            <summary>
+            Observações Finais
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.Cancelled">
+            <summary>
+            Cancelado
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.GroupNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.DocumentLines">
+            <summary>
+            Itens
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.DocumentAdditionalExpenses">
+            <summary>
+            Despesas Adicionais
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.DocumentInstallments">
+            <summary>
+            Parcelas
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Taxextension.Incoterms">
+            <summary>
+            Incoterms
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Taxextension.PackQuantity">
+            <summary>
+            Quantidade Embalagens
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Taxextension.PackDescription">
+            <summary>
+            Descrição Embalagem
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Taxextension.MainUsage">
+            <summary>
+            ID Utilização Principal (Tabela OUSG)
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.ItemCode">
+            <summary>
+            Código do item (Tabela OITM)
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.ItemDescription">
+            <summary>
+            Descrição do item (Não obrigatório)
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.Quantity">
+            <summary>
+            Quantidade
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.Price">
+            <summary>
+            Preço unitário
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.DiscountPercent">
+            <summary>
+            Percentual de desconto
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.WarehouseCode">
+            <summary>
+            Código depósito (Tabela OWHS)
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.CostingCode">
+            <summary>
+            Centro de Custo
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.ProjectCode">
+            <summary>
+            Projeto
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.TaxCode">
+            <summary>
+            Código do Imposto
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.LineTotal">
+            <summary>
+            Valor total da linha (Não obrigatório)
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.Usage">
+            <summary>
+            Utilização (Tabela OUSG)
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.BatchNumbers">
+            <summary>
+            Lotes
+            </summary>
+        </member>
+        <member name="P:Nordware.ServiceLayer.Bridge.API.Models.Documentline.DocumentLinesBinAllocations">
+            <summary>
+            Localização dos lotes/séries
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,91 @@
+{
+  "DocEntry": 0,
+  "DocNum": 720975,
+  "BPL_IDAssignedToInvoice": 1,
+  "DocDate": "2021-03-04",
+  "DocDueDate": "2021-03-04",
+  "TaxDate": "2021-03-04",
+  "CardCode": "C414235",
+  "CardName": "THIAGO RODRIGUES ADRIANO",
+  "Comments": "TESTE",
+  "PaymentGroupCode": -1,
+  "SalesPersonCode": 0,
+  "DiscountPercent": 0.0,
+  "SequenceCode": 31,
+  "SequenceSerial": 1089486,
+  "SeriesString": "1",
+  "SequenceModel": "39",
+  "OpeningRemarks": "Nota Fiscal referente ao pedido: 890220. Tipo de envio: FOB - DIRECT EXPRESS. Alíquota Interestadual de 4%, conforme Resolução nº 13/2012 do Senado Federal.",
+  "ClosingRemarks": "",
+  "DocumentLines": [
+    {
+      "LineNum": 0,
+      "ItemCode": "BC075",
+      "ItemDescription": "Bateria para Notebook Dell Vostro 3450 - Marca bringIT",
+      "Quantity": 1.0,
+      "Price": 136.0,
+      "Currency": "R$",
+      "DiscountPercent": 0.0,
+      "WarehouseCode": "01",
+      "CommisionPercent": 0.0,
+      "TaxCode": "6108-342",
+      "CFOPCode": "6108",
+      "CSTCode": "1.00",
+      "Usage": 29,
+      "UnitPrice": 136.0,
+      "BatchNumbers": [
+        {
+          "BatchNumber": "C263",
+          "Quantity": 1.0,
+          "BaseLineNumber": 0
+        }
+      ],
+      "DocumentLinesBinAllocations": [
+        {
+          "BinAbsEntry": 20035,
+          "Quantity": 1.0,
+          "SerialAndBatchNumbersBaseLine": 0,
+          "BaseLineNumber": 0
+        }
+      ]
+    },
+    {
+      "LineNum": 1,
+      "ItemCode": "SP022",
+      "ItemDescription": "Mesa - Black - Aluminium - With Mousepad / No Cooler",
+      "Quantity": 1.0,
+      "Price": 119.0,
+      "Currency": "R$",
+      "DiscountPercent": 0.0,
+      "WarehouseCode": "01",
+      "CommisionPercent": 0.0,
+      "TaxCode": "6108-342",
+      "CFOPCode": "6108",
+      "CSTCode": "1.00",
+      "Usage": 29,
+      "UnitPrice": 119.0,
+      "BatchNumbers": [
+        {
+          "BatchNumber": "C258",
+          "Quantity": 1.0,
+          "BaseLineNumber": 1
+        }
+      ],
+      "DocumentLinesBinAllocations": [
+        {
+          "BinAbsEntry": 19920,
+          "Quantity": 1.0,
+          "SerialAndBatchNumbersBaseLine": 0,
+          "BaseLineNumber": 1
+        }
+      ]
+    }
+  ],
+  "DocumentAdditionalExpenses": [
+    {
+      "ExpenseCode": 1,
+      "LineTotal": 19.0,
+      "LineNum": 0
+    }
+  ]
+}
