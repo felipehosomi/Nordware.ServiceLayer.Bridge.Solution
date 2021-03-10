@@ -89,12 +89,12 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// Cancelado
         /// </summary>
-        public string Cancelled { get;  }
+        public string Cancelled { get; }
         /// <summary>
         /// Forma de Pagamento (Tabela OPYM)
         /// </summary>
         public string PaymentMethod { get; set; }
-        
+
         /// <summary>
         /// Itens
         /// </summary>
@@ -296,19 +296,23 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         //public int? VisualOrder { get; set; }
         //public double UnitPrice { get; set; }
         //public double? PackageQuantity { get; set; }
-        
+
         //public string CostingCode2 { get; set; }
         //public string CostingCode3 { get; set; }
         //public string CostingCode4 { get; set; }
         //public string CostingCode5 { get; set; }
         //public string ItemDetails { get; set; }
-        
+
         //public string[] WithholdingTaxLines { get; set; }
         //public string[] SerialNumbers { get; set; }
         /// <summary>
         /// Lotes
         /// </summary>
         public Batchnumber[] BatchNumbers { get; set; }
+        /// <summary>
+        /// Números de Série
+        /// </summary>
+        public SerialNumber[] SerialNumbers { get; set; }
         /// <summary>
         /// Localização dos lotes/séries
         /// </summary>
@@ -434,6 +438,21 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// </summary>
         public int BaseLineNumber { get; set; }
     }
+
+    /// <summary>
+    /// Números de Série
+    /// </summary>
+    public class SerialNumber
+    {
+        /// <summary>
+        /// Número de Série
+        /// </summary>
+        public string InternalSerialNumber { get; set; }
+        //public int SystemSerialNumber { get; set; }
+        public int BaseLineNumber { get; set; }
+        public float Quantity { get; set; }
+    }
+
 
     /// <summary>
     /// Localização do lote/série
