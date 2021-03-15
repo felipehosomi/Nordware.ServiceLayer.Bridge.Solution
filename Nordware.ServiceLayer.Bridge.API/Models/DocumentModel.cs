@@ -11,21 +11,24 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
     public class DocumentModel
     {
         public int DocEntry { get; set; }
+        /// <summary>
+        /// Nr. Documento
+        /// </summary>
         public int DocNum { get; set; }
         /// <summary>
         /// ID Filial (Tabela OBPL)
         /// </summary>
         public int BPL_IDAssignedToInvoice { get; set; }
         /// <summary>
-        /// Data de Lançamento
+        /// Data de Lançamento (yyyy-MM-dd)
         /// </summary>
         public string DocDate { get; set; }
         /// <summary>
-        /// Data de Vencimento
+        /// Data de Vencimento (yyyy-MM-dd)
         /// </summary>
         public string DocDueDate { get; set; }
         /// <summary>
-        /// Data do documento
+        /// Data do documento (yyyy-MM-dd)
         /// </summary>
         public string TaxDate { get; set; }
         /// <summary>
@@ -77,7 +80,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// Modelo NF (Tabela ONFM)
         /// </summary>
         public string SequenceModel { get; set; }
-        //public double TotalDiscount { get; }
+        //public double TotalDiscount { get; set; }
         /// <summary>
         /// Observações Iniciais
         /// </summary>
@@ -89,7 +92,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// Cancelado
         /// </summary>
-        public string Cancelled { get; }
+        public string Cancelled { get; set; }
         /// <summary>
         /// Forma de Pagamento (Tabela OPYM)
         /// </summary>
@@ -519,6 +522,6 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// ID da parcela
         /// </summary>
-        public int InstallmentId { get; }
+        public int InstallmentId { get; set; }
     }
 }

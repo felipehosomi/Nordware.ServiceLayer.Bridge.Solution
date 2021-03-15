@@ -38,6 +38,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Controllers
         /// <summary>
         /// Insere NF
         /// </summary>
+        /// <param name="model">DocumentModel</param>
         /// <returns>DocEntry NF gerada</returns>
         [HttpPost]
         public string Post([FromBody] DocumentModel model)
