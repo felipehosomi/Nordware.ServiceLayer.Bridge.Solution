@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Nordware.ServiceLayer.Bridge.API.Controllers
 {
     /// <summary>
-    /// Nota Fiscal de Saída
+    /// Nota Fiscal de Saída - Tabela OINV
     /// </summary>
     [Route("api/[controller]")]
     public class InvoiceController : Controller

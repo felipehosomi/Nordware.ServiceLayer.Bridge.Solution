@@ -4,6 +4,18 @@
         <name>Nordware.ServiceLayer.Bridge.API</name>
     </assembly>
     <members>
+        <member name="T:Nordware.ServiceLayer.Bridge.API.Controllers.DownPaymentController">
+            <summary>
+            Adiantamento
+            </summary>
+        </member>
+        <member name="M:Nordware.ServiceLayer.Bridge.API.Controllers.DownPaymentController.Post(Nordware.ServiceLayer.Bridge.API.Models.DocumentModel)">
+            <summary>
+            Insere Adiantamento
+            </summary>
+            <param name="model">DocumentModel</param>
+            <returns>DocEntry Documento gerado</returns>
+        </member>
         <member name="T:Nordware.ServiceLayer.Bridge.API.Controllers.IncomingPaymentController">
             <summary>
             Contas a receber
@@ -33,6 +45,18 @@
             </summary>
             <param name="model">DocumentModel</param>
             <returns>DocEntry NF gerada</returns>
+        </member>
+        <member name="T:Nordware.ServiceLayer.Bridge.API.Controllers.ReturnRequestController">
+            <summary>
+            Pedido de Devolução
+            </summary>
+        </member>
+        <member name="M:Nordware.ServiceLayer.Bridge.API.Controllers.ReturnRequestController.Post(Nordware.ServiceLayer.Bridge.API.Models.DocumentModel)">
+            <summary>
+            Insere Pedido de Devolução
+            </summary>
+            <param name="model">DocumentModel</param>
+            <returns>DocEntry Documento gerado</returns>
         </member>
         <member name="T:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel">
             <summary>

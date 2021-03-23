@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -40,6 +41,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// </summary>
         public string CardName { get; set; }
 
+        public string DownPaymentType { get; set; }
         //public string NumAtCard { get; set; }
         //public double DocTotal { get; set; }
         //public string DocCurrency { get; set; }
