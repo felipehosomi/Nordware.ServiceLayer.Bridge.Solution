@@ -9,6 +9,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Controllers
     /// Adiantamento - Tabela ODPI
     /// </summary>
     [Route("api/[controller]")]
+    [ApiController]
     public class DownPaymentController : Controller
     {
         private readonly IOptions<ServiceLayerConnection> ServiceLayerConnection;

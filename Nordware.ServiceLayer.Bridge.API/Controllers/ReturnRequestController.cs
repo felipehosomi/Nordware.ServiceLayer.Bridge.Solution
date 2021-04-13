@@ -9,6 +9,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Controllers
     /// Pedido de Devolução - Tabela ORRR
     /// </summary>
     [Route("api/[controller]")]
+    [ApiController]
     public class ReturnRequestController : Controller
     {
         private readonly IOptions<ServiceLayerConnection> ServiceLayerConnection;

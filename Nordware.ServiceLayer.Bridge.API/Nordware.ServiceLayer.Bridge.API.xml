@@ -6,7 +6,7 @@
     <members>
         <member name="T:Nordware.ServiceLayer.Bridge.API.Controllers.DownPaymentController">
             <summary>
-            Adiantamento
+            Adiantamento - Tabela ODPI
             </summary>
         </member>
         <member name="M:Nordware.ServiceLayer.Bridge.API.Controllers.DownPaymentController.Post(Nordware.ServiceLayer.Bridge.API.Models.DocumentModel)">
@@ -18,7 +18,7 @@
         </member>
         <member name="T:Nordware.ServiceLayer.Bridge.API.Controllers.IncomingPaymentController">
             <summary>
-            Contas a receber
+            Contas a receber - Tabela ORCT
             </summary>
         </member>
         <member name="M:Nordware.ServiceLayer.Bridge.API.Controllers.IncomingPaymentController.Post(Nordware.ServiceLayer.Bridge.API.Models.IncomingPaymentModel)">
@@ -30,7 +30,7 @@
         </member>
         <member name="T:Nordware.ServiceLayer.Bridge.API.Controllers.InvoiceController">
             <summary>
-            Nota Fiscal de Saída
+            Nota Fiscal de Saída - Tabela OINV
             </summary>
         </member>
         <member name="M:Nordware.ServiceLayer.Bridge.API.Controllers.InvoiceController.Get(System.Int32)">
@@ -48,7 +48,7 @@
         </member>
         <member name="T:Nordware.ServiceLayer.Bridge.API.Controllers.ReturnRequestController">
             <summary>
-            Pedido de Devolução
+            Pedido de Devolução - Tabela ORRR
             </summary>
         </member>
         <member name="M:Nordware.ServiceLayer.Bridge.API.Controllers.ReturnRequestController.Post(Nordware.ServiceLayer.Bridge.API.Models.DocumentModel)">
@@ -120,7 +120,7 @@
         </member>
         <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.SequenceCode">
             <summary>
-            Modelo NF (Tabela NFN1)
+            Modelo NF (Tabela NFN1) - Obrigatório para NOTA FISCAL
             </summary>
         </member>
         <member name="P:Nordware.ServiceLayer.Bridge.API.Models.DocumentModel.SequenceSerial">

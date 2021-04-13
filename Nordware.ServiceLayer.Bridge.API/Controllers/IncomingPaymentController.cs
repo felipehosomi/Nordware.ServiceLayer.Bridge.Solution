@@ -9,6 +9,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Controllers
     /// Contas a receber - Tabela ORCT
     /// </summary>
     [Route("api/[controller]")]
+    [ApiController]
     public class IncomingPaymentController : Controller
     {
         private readonly IOptions<ServiceLayerConnection> ServiceLayerConnection;

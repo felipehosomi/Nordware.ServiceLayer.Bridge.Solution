@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Nordware.ServiceLayer.Bridge.API.Models
 {
@@ -18,22 +16,28 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// ID Filial (Tabela OBPL)
         /// </summary>
+        [Required]
+        [Range(1, int.MaxValue)]
         public int BPLID { get; set; }
         /// <summary>
         /// Data de Lançamento (yyyy-MM-dd)
         /// </summary>
+        [Required]
         public string DocDate { get; set; }
         /// <summary>
         /// Data de Vencimento (yyyy-MM-dd)
         /// </summary>
+        [Required]
         public string DocDueDate { get; set; }
         /// <summary>
         /// Data do documento (yyyy-MM-dd)
         /// </summary>
+        [Required]
         public string TaxDate { get; set; }
         /// <summary>
         /// Cód. Cliente (Tabela OCRD)
         /// </summary>
+        [Required]
         public string CardCode { get; set; }
         /// <summary>
         /// Valor Total do pagamento em DINHEIRO
@@ -81,6 +85,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// Linhas do documento
         /// </summary>
+        [Required]
         public Paymentinvoice[] PaymentInvoices { get; set; }
         /// <summary>
         /// Dados do cartão de crédito

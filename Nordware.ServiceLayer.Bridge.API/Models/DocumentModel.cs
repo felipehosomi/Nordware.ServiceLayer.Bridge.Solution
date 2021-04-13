@@ -1,8 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Nordware.ServiceLayer.Bridge.API.Models
 {
@@ -19,22 +17,28 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// ID Filial (Tabela OBPL)
         /// </summary>
+        [Required]
+        [Range(1, int.MaxValue)]
         public int BPL_IDAssignedToInvoice { get; set; }
         /// <summary>
         /// Data de Lançamento (yyyy-MM-dd)
         /// </summary>
+        [Required]
         public string DocDate { get; set; }
         /// <summary>
         /// Data de Vencimento (yyyy-MM-dd)
         /// </summary>
+        [Required]
         public string DocDueDate { get; set; }
         /// <summary>
         /// Data do documento (yyyy-MM-dd)
         /// </summary>
+        [Required]
         public string TaxDate { get; set; }
         /// <summary>
         /// Cód. Cliente (Tabela OCRD)
         /// </summary>
+        [Required]
         public string CardCode { get; set; }
         /// <summary>
         /// Nome Cliente
@@ -54,7 +58,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// Condição de pagamento (Tabela OCTG)
         /// </summary>
-        public int PaymentGroupCode { get; set; }
+        public int? PaymentGroupCode { get; set; }
         /// <summary>
         /// Id Vendedor (Tabela OSLP)
         /// </summary>
@@ -66,12 +70,13 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         public double DiscountPercent { get; set; }
 
         /// <summary>
-        /// Modelo NF (Tabela NFN1)
+        /// Modelo NF (Tabela NFN1) - Obrigatório para NOTA FISCAL
         /// </summary>
         public int SequenceCode { get; set; }
         /// <summary>
         /// Número da NF
         /// </summary>
+        /// [Range(1, int.MaxValue)]
         public int SequenceSerial { get; set; }
         /// <summary>
         /// Número de Série
@@ -103,6 +108,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// Itens
         /// </summary>
+        [Required]
         public Documentline[] DocumentLines { get; set; }
         /// <summary>
         /// Despesas Adicionais
@@ -224,6 +230,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// Código do item (Tabela OITM)
         /// </summary>
+        [Required]
         public string ItemCode { get; set; }
         /// <summary>
         /// Descrição do item (Não obrigatório)
@@ -232,11 +239,13 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// Quantidade
         /// </summary>
+        [Required]
         public double Quantity { get; set; }
         //public string ShipDate { get; set; }
         /// <summary>
         /// Preço unitário
         /// </summary>
+        [Required]
         public double Price { get; set; }
         //public string Currency { get; set; }
         /// <summary>
@@ -296,6 +305,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// <summary>
         /// Utilização (Tabela OUSG)
         /// </summary>
+        [Required]
         public int Usage { get; set; }
         //public string TaxOnly { get; set; }
         //public int? VisualOrder { get; set; }

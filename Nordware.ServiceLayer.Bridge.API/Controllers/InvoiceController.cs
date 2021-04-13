@@ -13,6 +13,7 @@ namespace Nordware.ServiceLayer.Bridge.API.Controllers
     /// Nota Fiscal de Saída - Tabela OINV
     /// </summary>
     [Route("api/[controller]")]
+    [ApiController]
     public class InvoiceController : Controller
     {
         private readonly IOptions<ServiceLayerConnection> ServiceLayerConnection;
