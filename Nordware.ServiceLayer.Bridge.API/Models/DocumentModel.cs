@@ -512,6 +512,18 @@ namespace Nordware.ServiceLayer.Bridge.API.Models
         /// </summary>
         public string TaxCode { get; set; }
         public int LineNum { get; set; }
+        /// <summary>
+        /// DocEntry do documento base referenciado
+        /// </summary>
+        public int BaseDocEntry { get; set; }
+        /// <summary>
+        /// Linha referente ao imposto do documento base referenciado
+        /// </summary>
+        public int BaseDocLine { get; set; }
+        /// <summary>
+        /// Tipo do documento base referenciado
+        /// </summary>
+        public int BaseDocType { get; set; }
     }
 
     /// <summary>
